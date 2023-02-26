@@ -1,0 +1,171 @@
+/* RESETING */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+  max-width: 100%;
+  display: block;  
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --pink: #36d4ff;
+  --low-grey: #95989a;
+  --white: #fff;
+  --black: #000;
+  --grey: #5d5d5d;
+}
+/*  */
+
+
+/* code */
+body{
+  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg ,rgba(0,0,0,.8), rgba(0,0,0,0)), url(../img/pexels-pixabay-236380.jpg);
+  color: var(--white);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+h1{
+  text-align: center;
+  grid-column: 1 / -1;
+  color: var(--pink);
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.hospital-infos{
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.form-item label{
+  display: block;
+}
+.genero label{
+  display: inline-block;
+}
+
+/* hosp-intro */
+.hosp-intro{
+  max-width: 80%;
+}
+.hosp-intro h2{
+  color: var(--pink);
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.hosp-intro p{
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  color: var(--white);
+}
+/*  */
+
+/* hosp-form */
+.hosp-form{
+  background-color: rgba(0, 0, 0, 0.575);
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+}
+form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem 4rem;
+  align-items: center;
+}
+.form-title{
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  grid-column: 1 / -1;
+  color: var(--pink);
+}
+.form-item{
+  margin-bottom: 2rem;
+}
+.form-item label{
+  margin-bottom: .5rem;
+}
+.form-item input{
+  padding: 6px 8px;
+  border-radius: .4rem;
+  outline: none;
+}
+::placeholder{
+  color: #ccc;
+}
+.genero-title{
+  margin-bottom: 1rem;
+}
+.genero label, .genero input {
+  margin: 0;
+  padding: 0;
+}
+.genero input{
+  width: 12px;
+  height: 12px;
+}
+.genero-flex{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cirurgia label{
+  margin-bottom: 1rem;
+}
+.cirurgia select{
+  padding: 6px 8px;
+  width: 60%;
+  outline: none;
+  border-radius: .4rem;
+}
+.alergias label{
+  margin-bottom: 1rem;
+}
+.alergias textarea{
+  border-radius: .4rem;
+  padding: 6px 8px;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  justify-self: start;
+}
+button{
+  border: none;
+  padding: 6px 8px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: .4rem;
+  background-color: var(--white);
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--pink);
+  color: var(--white);
+}
+/*  */

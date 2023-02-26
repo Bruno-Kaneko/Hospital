@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Hospital</h1>
+  </header>
+  
+  <main class="hospital-infos">
+
+    <section class="hosp-intro">
+      <h2 class="hosp-title">The best</h2>
+      <p class="hosp-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vitae libero consequuntur error reiciendis! Pariatur, reiciendis molestias! Vel aliquid voluptas fuga nihil, excepturi libero, minus officiis accusantium distinctio omnis vero.
+      </p>
+      <p class="hosp-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab mollitia nesciunt iusto est adipisci, quo nemo suscipit labore, voluptates dolorem incidunt asperiores nisi nulla. Corporis ipsum assumenda repellendus atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minima nostrum odio cum, quis iusto sunt quas enim </p>
+      <p class="hosp-text">Aguardamos ansiosamente por uma visita sua :)</p>
+    </section>
+
+    <section class="hosp-form">
+      <form action="./">
+        <h3 class="form-title">Preencha seus dados para agendar uma visita</h3>
+
+        <div class="form-group">
+          <div class="form-item">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="nome">
+          </div>
+
+          <div class="form-item">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="####@email.com">
+          </div>
+
+          <div class="form-item">
+            <label for="tel">Celular:</label>
+            <input type="tel" name="tel" id="tel" placeholder="xx - (xxxx-xxxx)">
+          </div>
+
+          <div class="form-item genero">
+            <p class="genero-title">Sexo:</p>
+            <div class="genero-flex"> 
+              <label for="masc">Masculino</label>
+              <input type="radio" name="sex" id="masc" value="masculino" checked>
+              <label for="fem">Feminino</label>
+              <input type="radio" name="sex" id="fem" value="feminino">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="form-item cirurgia">
+            <label for="cirur">N° de cirurgias:</label>
+            <select name="cirur" id="cirur">
+              <option value="1">1 cirurgia</option>
+              <option value="1">2 cirurgias</option>
+              <option value="1">3 cirurgias</option>
+              <option value="1">4 cirurgias</option>
+              <option value="1">Mais de 5</option>
+            </select>
+          </div>
+
+          <div class="form-item">
+            <label for="remedios">Remédios:</label>
+            <input type="number" name="remedios" id="remedios" value="remedios">
+          </div>
+
+          <div class="form-item alergias">
+            <label for="alergias">Alergias:</label>
+            <textarea name="alergias" id="alergias" rows="4"></textarea>
+          </div>
+        </div>
+
+          <button>Enviar dados</button>
+
+      </form>
+    </section>
+
+  </main>
+</body>
+
+</html>
